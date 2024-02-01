@@ -1,10 +1,10 @@
-# genymotion-saas Orb [![CircleCI Build Status](https://circleci.com/gh/Genymobile/genymotion-saas-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/Genymobile/genymotion-saas-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/genymotion/genymotion-saas)](https://circleci.com/orbs/registry/orb/genymotion/genymotion-saas) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Genymobile/genymotion-saas-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+# genymotion-saas Orb [![CircleCI Build Status](https://circleci.com/gh/lich-bot/genymotion-saas-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/lich-bot/genymotion-saas-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/genymotion/genymotion-saas)](https://circleci.com/orbs/registry/orb/lich-bot/genymotion-saas) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/lich-bot/genymotion-saas-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
 Use this orb to easily start Genymotion Android virtual devices, connect through ADB and stop devices on [Genymotion Cloud SaaS](https://cloud.geny.io) for mobile automation testing.
 
 ## Usage
 
-See [this orb's listing in CircleCI's Orbs Registry](https://circleci.com/orbs/registry/orb/genymotion/genymotion-saas) for details on usage, or see below example:
+See [this orb's listing in CircleCI's Orbs Registry](https://circleci.com/orbs/registry/orb/lich-bot/genymotion-saas) for details on usage, or see below example:
 
 ## Example
 
@@ -14,11 +14,11 @@ In this example `config.yml` snippet, the required Genymotion Cloud SaaS secrets
 version: 2.1
 
 orbs:
-  genymotion-saas: genymotion/genymotion-saas@x.y
+  genymotion-saas: lich-bot/genymotion-saas@x.y
 
 jobs:
   android:
-    executor: genymotion-saas/default
+    executor: lich-bot/default
     steps:
       - genymotion-saas/setup
       - genymotion-saas/start-instance:
